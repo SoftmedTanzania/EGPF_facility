@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/wrap"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_f_name"
+                android:textColor="@color/black"
+                android:text="First Name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_l_name"
+                android:textColor="@color/black"
+                android:text="Last Name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_gender"
+                android:textColor="@color/black"
+                android:text="Gender"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_treatment"
+                android:textColor="@color/black"
+                android:text="Treatment"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_phone_number"
+                android:textColor="@color/black"
+                android:text="Phone Number"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_village"
+                android:textColor="@color/black"
+                android:text="Village"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rufaa_button"
+                android:background="@drawable/border_one"
+                android:text="Rufaa"
+                android:textSize="14sp"
+                android:textColor="@color/card_grid_text"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/card_separator"
+        android:layout_below="@id/wrap"/>
+
+
+</RelativeLayout>

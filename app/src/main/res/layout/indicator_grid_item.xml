@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="8dp"
+        android:layout_margin="1dp"
+        android:id="@+id/indicator_wrapper"
+        android:background="@drawable/border_indicators_unselected">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/indicator_name"
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Indicator Name"
+            android:fontFamily="@font/roboto_regular"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

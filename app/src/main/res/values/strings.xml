@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Htmr Facility</string>
+
+    <string name="dummy_text">If the community health worker surveys and finds a family with a person who has TB they get information of all the other
+        relatives that stay with the patient person and referes them to kituo cha afya with the same CBHS as the TB patient and once any of the members
+        will be found with TB they will then be registered with their own CBHS number (New registration occurs here)</string>
+    <string name="home">Mwanzo</string>
+    <string name="kutoka_tarehe">Kutoka Tarehe</string>
+
+    <string name="village">Kijiji</string>
+    <string name="ward">Kata</string>
+    <string name="map_cue">Map Cue</string>
+
+</resources>

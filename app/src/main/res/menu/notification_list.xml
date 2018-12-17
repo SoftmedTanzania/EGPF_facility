@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/notifications"
+        android:title="Notifications"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+
+        <item android:id="@+id/settings" android:title="Notification 1"
+            android:orderInCategory="100"
+            android:actionLayout="@layout/notifications_list"/>
+
+        <item android:id="@+id/logout" android:title="Notification 2"
+            android:orderInCategory="100"
+            android:actionLayout="@layout/notifications_list"/>
+
+        <item android:id="@+id/settings2" android:title="Notification 3"
+            android:orderInCategory="100"
+            android:actionLayout="@layout/notifications_list"/>
+
+        <item android:id="@+id/logout2" android:title="Notification 4"
+            android:orderInCategory="100"
+            android:actionLayout="@layout/notifications_list"/>
+
+        <item android:id="@+id/settings3" android:title="Notification 5"
+            android:orderInCategory="100"
+            android:actionLayout="@layout/notifications_list"/>
+
+        <item android:id="@+id/logout3" android:title="Notification 6"
+            android:orderInCategory="100"
+            android:actionLayout="@layout/notifications_list"/>
+
+    </item>
+
+</menu>

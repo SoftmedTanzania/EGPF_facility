@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.softmed.htmr_facility.activities.MainActivity"
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HTMR"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="14sp"
+                            android:id="@+id/app_name"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:background="@color/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="@color/colorPrimary"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginRight="72dp"
+                        android:layout_marginTop="46dp"
+                        android:paddingBottom="16dp"
+                        android:layout_marginBottom="56dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/card_separator_third">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="16dp"
+                                    android:textColor="@color/black"
+                                    android:text="Alice Doe"
+                                    android:textSize="42sp"
+                                    android:id="@+id/client_name"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/avenir_light"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="16dp"
+                                    android:textColor="@color/black"
+                                    android:text="(Mrejesho)"
+                                    android:textSize="42sp"
+                                    android:layout_toRightOf="@id/client_name"
+                                    android:id="@+id/feedback_heading"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/avenir_light"/>
+
+                                <TextView
+                                    android:visibility="invisible"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/client_name"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="16dp"
+                                    android:textSize="14sp"
+                                    android:id="@+id/cbhs_number_title"
+                                    android:fontFamily="@font/avenir_light"
+                                    android:text="CBHS #"
+                                    android:textColor="@color/card_title_text"/>
+
+                                <TextView
+                                    android:visibility="invisible"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/card_title_text"
+                                    android:layout_below="@id/client_name"
+                                    android:text="0001/0001/000001"
+                                    android:textSize="14sp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:id="@+id/cbhs_number_value"
+                                    android:layout_toRightOf="@+id/cbhs_number_title"
+                                    android:fontFamily="@font/avenir_light"/>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/card_separator"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/feedback_title"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginTop="16dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/card_title_text"
+                                android:fontFamily="@font/roboto_condensed"
+                                android:text="Mrejesho wa Rufaa"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hiv_status_title"
+                                    android:layout_marginTop="16dp"
+                                    android:text="Majibu ya Vipimo"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/avenir_light"
+                                    android:textColor="@color/card_title_text"/>
+
+                                <CheckBox
+                                    android:id="@+id/hiv_status"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_toRightOf="@+id/hiv_status_title"
+                                    android:checked="false"
+                                    android:background="@drawable/checkbox"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/hiv_status"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/card_grid_text"
+                                    android:text="( Tiki kama chanya )"
+                                    android:fontFamily="@font/roboto_condensed_italic"/>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:padding="16dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/service_offered_title"
+                                        android:text="Huduma iliyotolewa"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:id="@+id/service_offered_et"
+                                        android:minLines="4"
+                                        android:gravity="start"
+                                        android:padding="8dp"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/card_grid_text"
+                                        android:background="@drawable/border_one" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:orientation="vertical"
+                                    android:padding="16dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/service_advice_title"
+                                        android:text="Maelezo mengine/Ushauri"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:id="@+id/other_information_et"
+                                        android:minLines="4"
+                                        android:padding="8dp"
+                                        android:textSize="14sp"
+                                        android:gravity="start"
+                                        android:textColor="@color/card_grid_text"
+                                        android:background="@drawable/border_one" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/card_separator_third"
+                                android:paddingLeft="32dp"
+                                android:paddingRight="32dp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.4"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="16dp">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Miaka"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/client_age_title"
+                                        android:textColor="@color/card_grid_text"
+                                        android:fontFamily="@font/avenir_light"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/card_grid_text"
+                                        android:layout_marginLeft="16dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/client_age_value"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_toRightOf="@id/client_age_title"
+                                        android:text="27"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jinsia"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="16sp"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_toRightOf="@+id/client_age_value"
+                                        android:id="@+id/client_gender_title"
+                                        android:textColor="@color/card_grid_text"
+                                        android:fontFamily="@font/avenir_light"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/card_grid_text"
+                                        android:layout_marginLeft="16dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/patient_gender_value"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_toRightOf="@+id/client_gender_title"
+                                        android:text="KE"/>
+
+                                    <TextView
+                                        android:visibility="gone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="Kata"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="16sp"
+                                        android:layout_below="@id/client_gender_title"
+                                        android:id="@+id/client_kata_title"
+                                        android:textColor="@color/card_grid_text"
+                                        android:fontFamily="@font/avenir_light"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/card_grid_text"
+                                        android:textSize="14sp"
+                                        android:id="@+id/client_kata_value"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_below="@id/client_gender_title"
+                                        android:layout_toRightOf="@+id/client_kata_title"
+                                        android:text="Msolwa"/>
+
+                                    <TextView
+                                        android:visibility="gone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="Kijiji"
+                                        android:layout_marginTop="16dp"
+                                        android:textSize="14sp"
+                                        android:layout_below="@id/client_gender_title"
+                                        android:layout_toRightOf="@id/client_kata_value"
+                                        android:id="@+id/client_kijiji_title"
+                                        android:textColor="@color/card_grid_text"
+                                        android:fontFamily="@font/avenir_light"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/card_grid_text"
+                                        android:layout_marginLeft="16dp"
+                                        android:textSize="14sp"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:id="@+id/client_kijiji_value"
+                                        android:layout_below="@id/client_gender_title"
+                                        android:layout_toRightOf="@id/client_kata_value"
+                                        android:text="Mbelwa"/>
+
+                                    <TextView
+                                        android:visibility="gone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:text="Kitongoji"
+                                        android:layout_marginTop="16dp"
+                                        android:textSize="16sp"
+                                        android:layout_below="@id/client_gender_title"
+                                        android:layout_toRightOf="@id/client_kijiji_value"
+                                        android:id="@+id/client_kitongoji_title"
+                                        android:textColor="@color/card_grid_text"
+                                        android:fontFamily="@font/avenir_light"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/card_grid_text"
+                                        android:layout_marginLeft="16dp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/client_kitongoji_value"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_below="@id/client_gender_title"
+                                        android:layout_toRightOf="@id/client_kijiji_value"
+                                        android:text="Mkesemani"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/client_kata_value"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="16sp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:id="@+id/mwenyekiti_name_title"
+                                        android:textColor="@color/card_grid_text"
+                                        android:text="m/kiti kitongoji"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/mwenyekiti_name_value"
+                                        android:layout_below="@id/client_kata_value"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="16sp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_toRightOf="@id/mwenyekiti_name_title"
+                                        android:layout_marginLeft="16dp"
+                                        android:textColor="@color/card_grid_text"
+                                        android:text="Mwenelukanzima Mpechu"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:visibility="invisible"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.4"
+                                    android:paddingBottom="16dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textColor="@color/card_title_text"
+                                        android:textSize="14sp"
+                                        android:id="@+id/referer_name_title"
+                                        android:text="Rufaa imetolewa na"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/referer_name_title"
+                                        android:id="@+id/referer_name_value"
+                                        android:layout_marginTop="4dp"
+                                        android:textColor="@color/card_title_text"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textSize="14sp"
+                                        android:text="Kinjekitile Ngwale" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/cheo_title"
+                                        android:layout_below="@id/referer_name_value"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/card_title_text"
+                                        android:text="Cheo"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_marginTop="16dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/cheo_value"
+                                        android:layout_marginTop="4dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:layout_below="@id/cheo_title"
+                                        android:textSize="14sp"
+                                        android:text="CHW"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:visibility="invisible"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/cyan_100"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:id="@+id/referer_title"
+                                android:text="Taarifa za rufaa"
+                                android:textColor="@color/card_title_text"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/roboto_condensed"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="@color/white"
+                                android:layout_marginLeft="16dp"
+                                android:padding="16dp">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.3"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/white"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sababu ya Rufaa"
+                                        android:id="@+id/sababu_ya_rufaa_title"
+                                        android:textColor="@color/card_title_text"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/roboto_condensed"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/sababu_ya_rufaa_title">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/card_grid_text"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textSize="16sp"
+                                            android:id="@+id/sababu_ya_rufaa_value"
+                                            android:text="@string/dummy_text"/>
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/card_separator"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginRight="16dp"/>
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.3"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/flags_title"
+                                        android:textSize="14sp"
+                                        android:text="Viashiria"
+                                        android:fontFamily="@font/roboto_condensed"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tb_dose_flag"
+                                        android:layout_below="@id/flags_title"
+                                        android:layout_marginTop="16dp"
+                                        android:text="Dozi ya TB"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <CheckBox
+                                        android:id="@+id/tb_flag"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_below="@+id/flags_title"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:checked="false"
+                                        android:enabled="false"
+                                        android:layout_toRightOf="@id/tb_dose_flag"
+                                        android:background="@drawable/checkbox"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/pregnancy_flag_title"
+                                        android:layout_below="@id/tb_flag"
+                                        android:layout_marginTop="16dp"
+                                        android:text="Mjamzito"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <CheckBox
+                                        android:id="@+id/pregnancy_flag"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_below="@+id/tb_flag"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_alignRight="@+id/tb_flag"
+                                        android:enabled="false"
+                                        android:background="@drawable/checkbox" />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/card_separator"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginRight="16dp"/>
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.3"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/clinical_information_title"
+                                        android:textSize="14sp"
+                                        android:text="Taarifa nyingine za Kliniki"
+                                        android:fontFamily="@font/roboto_condensed"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/clinical_information_title"
+                                        android:layout_marginTop="8dp"
+                                        android:textSize="14sp"
+                                        android:text="N/A"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textColor="@color/card_title_text"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:visibility="gone">
+
+                                <Button
+                                    android:layout_width="200dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="16dp"
+                                    android:text="Rufaa"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/referal_button"
+                                    android:fontFamily="@font/julius_sans_one"
+                                    android:textColor="@color/card_title_text"
+                                    android:background="@drawable/border_one"/>
+
+                                <Button
+                                    android:layout_width="200dp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/save_button"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/border_three"
+                                    android:layout_toLeftOf="@id/referal_button"
+                                    android:fontFamily="@font/julius_sans_one"
+                                    android:layout_marginRight="16dp"
+                                    android:textColor="@color/white"
+                                    android:text="Hifadhi"/>
+
+                                <com.rey.material.widget.ProgressView
+                                    android:layout_width="200dp"
+                                    android:layout_height="48dp"
+                                    android:paddingLeft="75dp"
+                                    android:paddingRight="75dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/save_progress"
+                                    android:layout_toLeftOf="@id/referal_button"
+                                    android:visibility="invisible"
+                                    app:pv_autostart="true"
+                                    app:pv_circular="true"
+                                    app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+                                    app:pv_progressMode="indeterminate"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app_ms="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:background="@color/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="@color/colorPrimary"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginRight="72dp"
+                        android:layout_marginTop="46dp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="2dp"
+                        android:layout_marginBottom="56dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="32dp"
+                                    android:id="@+id/demography_wrap"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentRight="true"
+                                            android:textSize="24sp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:textColor="@color/card_title_text"
+                                            android:fontFamily="@font/roboto_light"
+                                            android:text="Taarifa za Awali"/>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="100dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:background="@color/card_separator"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.7"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="32dp"
+                                            android:text="Majina"
+                                            android:textSize="14sp"
+                                            android:id="@+id/names_title"
+                                            android:textColor="@color/card_title_text"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_below="@id/names_title"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="20sp"
+                                            android:id="@+id/names_text"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:textColor="@color/card_grid_tex"
+                                            android:text="John Boo Bear"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="32dp"
+                                            android:orientation="horizontal"
+                                            android:layout_below="@id/names_text"
+                                            android:layout_marginTop="32dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.6"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Jinsia"
+                                                    android:textSize="14sp"
+                                                    android:id="@+id/gender_title"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/gender_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:textSize="16sp"
+                                                    android:id="@+id/gender_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_grid_tex"
+                                                    android:text="Male"/>
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.6"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Umri"
+                                                    android:textSize="14sp"
+                                                    android:id="@+id/age_title"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/age_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:textSize="16sp"
+                                                    android:id="@+id/age_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_grid_tex"
+                                                    android:text="33 Years"/>
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Uzito"
+                                                    android:textSize="14sp"
+                                                    android:id="@+id/weight_title"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/weight_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:textSize="16sp"
+                                                    android:id="@+id/weight_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_grid_tex"
+                                                    android:text="79 Kg"/>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="32dp"
+                                    android:id="@+id/contact_wrap"
+                                    android:layout_below="@id/demography_wrap"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentRight="true"
+                                            android:textSize="24sp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:textColor="@color/card_title_text"
+                                            android:fontFamily="@font/roboto_light"
+                                            android:text="Taarifa za Mawasiliano"/>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="100dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:background="@color/card_separator"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.7"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="32dp"
+                                            android:text="Phone"
+                                            android:textSize="14sp"
+                                            android:id="@+id/phone_title"
+                                            android:textColor="@color/card_title_text"
+                                            />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_below="@id/phone_title"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:id="@+id/phone_text"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:textColor="@color/card_grid_tex"
+                                            android:text="+255 768 123 456"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="32dp"
+                                            android:orientation="horizontal"
+                                            android:layout_below="@id/phone_text"
+                                            android:layout_marginTop="32dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.6"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Kata"
+                                                    android:textSize="14sp"
+                                                    android:id="@+id/ward_title"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/ward_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:textSize="16sp"
+                                                    android:id="@+id/ward_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_grid_tex"
+                                                    android:text="Muleba"/>
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.6"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Kijiji"
+                                                    android:textSize="14sp"
+                                                    android:id="@+id/village_title"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/village_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:textSize="16sp"
+                                                    android:id="@+id/village_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_grid_tex"
+                                                    android:text="Mukitebse"/>
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Kitongoji"
+                                                    android:textSize="14sp"
+                                                    android:id="@+id/hamlet_title"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_below="@id/hamlet_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:textSize="16sp"
+                                                    android:id="@+id/hamlet_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_grid_tex"
+                                                    android:text="Mwakipetule"/>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="32dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentRight="true"
+                                            android:textSize="24sp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:textColor="@color/card_title_text"
+                                            android:fontFamily="@font/roboto_light"
+                                            android:text="Taarifa za Matibabu"/>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:background="@color/card_separator"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.7"
+                                        android:layout_height="wrap_content">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:id="@+id/treatment_type_wrap"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp">
+
+                                            <fr.ganfra.materialspinner.MaterialSpinner
+                                                android:id="@+id/spin_matibabu"
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:divider="@null"
+                                                android:textSize="14sp"
+                                                app_ms:ms_hintTextSize="14sp"
+                                                app_ms:ms_alwaysShowFloatingLabel="true"
+                                                app_ms:ms_multiline="false"
+                                                app_ms:ms_hint="Matibabu"
+                                                app_ms:ms_enableFloatingLabel="true"
+                                                app_ms:ms_enableErrorLabel="false"
+                                                app_ms:ms_floatingLabelText="Matibabu"
+                                                app_ms:ms_baseColor="@color/card_grid_tex"
+                                                app_ms:ms_highlightColor="@color/card_grid_text"
+                                                app_ms:ms_errorColor="@color/red_500"
+                                                app_ms:ms_hintColor="#b3b3b3"
+                                                app_ms:ms_arrowColor="@color/black"
+                                                app_ms:ms_arrowSize="12dp"
+                                                app_ms:ms_alignLabels="false"
+                                                app_ms:ms_floatingLabelColor="@color/white"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_toRightOf="@id/spin_matibabu"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/avenir_light"
+                                                android:layout_marginLeft="32dp"
+                                                android:textSize="16dp"
+                                                android:text="Aina ya Matibabu"/>
+
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/treatment_type_wrap"
+                                            android:layout_marginTop="32dp"
+                                            android:orientation="horizontal">
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="X-Ray"
+                                                    android:textSize="14sp"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:id="@+id/x_ray_title"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <EditText
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:minLines="3"
+                                                    android:textSize="16sp"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:id="@+id/xray_value"
+                                                    android:gravity="start"
+                                                    android:padding="4dp"
+                                                    android:textColor="@color/card_grid_text"
+                                                    android:background="@drawable/border_one"
+                                                    android:layout_below="@id/x_ray_title"
+                                                    android:layout_marginTop="8dp"/>
+
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginRight="32dp"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Vipimo Vingine"
+                                                    android:textSize="14sp"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:id="@+id/other_tests_title"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                                <EditText
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:minLines="3"
+                                                    android:gravity="start"
+                                                    android:padding="4dp"
+                                                    android:textSize="16sp"
+                                                    android:textColor="@color/card_grid_text"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:id="@+id/other_tests_value"
+                                                    android:background="@drawable/border_one"
+                                                    android:layout_below="@id/other_tests_title"
+                                                    android:layout_marginTop="8dp"/>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="32dp"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentRight="true"
+                                            android:textSize="24sp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:textColor="@color/card_title_text"
+                                            android:fontFamily="@font/roboto_light"
+                                            android:text="Ufuatiliaji wa Matibabu"/>
+
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="32dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:background="@color/card_separator"/>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.7"
+                                        android:layout_marginTop="32dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <fr.ganfra.materialspinner.MaterialSpinner
+                                            android:id="@+id/spin_encounter_month"
+                                            android:layout_width="150dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:divider="@null"
+                                            android:textSize="14sp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginTop="32dp"
+                                            app_ms:ms_hintTextSize="14sp"
+                                            app_ms:ms_alwaysShowFloatingLabel="true"
+                                            app_ms:ms_multiline="false"
+                                            app_ms:ms_hint="Mwezi"
+                                            app_ms:ms_enableFloatingLabel="true"
+                                            app_ms:ms_enableErrorLabel="false"
+                                            app_ms:ms_floatingLabelText="Mwezi"
+                                            app_ms:ms_baseColor="@color/card_grid_tex"
+                                            app_ms:ms_highlightColor="@color/card_grid_text"
+                                            app_ms:ms_errorColor="@color/red_500"
+                                            app_ms:ms_hintColor="#b3b3b3"
+                                            app_ms:ms_arrowColor="@color/black"
+                                            app_ms:ms_arrowSize="12dp"
+                                            app_ms:ms_alignLabels="false"
+                                            app_ms:ms_floatingLabelColor="@color/white"/>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_margin="32dp"
+                                            android:layout_weight="1">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerVertical="true"
+                                                    android:textColor="@color/card_grid_text"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:id="@+id/makohozi_title"
+                                                    android:textSize="16dp"
+                                                    android:text="Makohozi"/>
+
+                                                <fr.ganfra.materialspinner.MaterialSpinner
+                                                    android:id="@+id/spin_makohozi"
+                                                    android:layout_width="70dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_toRightOf="@id/makohozi_title"
+                                                    android:layout_alignParentRight="true"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:divider="@null"
+                                                    android:textSize="14sp"
+                                                    app_ms:ms_hintTextSize="14sp"
+                                                    app_ms:ms_alwaysShowFloatingLabel="true"
+                                                    app_ms:ms_multiline="false"
+                                                    app_ms:ms_hint="Makohozi"
+                                                    app_ms:ms_enableFloatingLabel="true"
+                                                    app_ms:ms_enableErrorLabel="false"
+                                                    app_ms:ms_floatingLabelText="Aina"
+                                                    app_ms:ms_baseColor="@color/card_grid_tex"
+                                                    app_ms:ms_highlightColor="@color/card_grid_text"
+                                                    app_ms:ms_errorColor="@color/red_500"
+                                                    app_ms:ms_hintColor="#b3b3b3"
+                                                    app_ms:ms_arrowColor="@color/black"
+                                                    app_ms:ms_arrowSize="12dp"
+                                                    app_ms:ms_alignLabels="false"
+                                                    app_ms:ms_floatingLabelColor="@color/card_grid_tex"/>
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/finished_previous_month_layout"
+                                                android:layout_marginTop="16dp">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:id="@+id/medication_status_title"
+                                                    android:layout_below="@id/flags_title"
+                                                    android:layout_marginTop="16dp"
+                                                    android:text="Amemaliza Dawa Za Mwezi Uliopita Kikamilifu"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/avenir_light"
+                                                    android:textColor="@color/card_grid_text"/>
+
+                                                <CheckBox
+                                                    android:id="@+id/medication_status"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="55dp"
+                                                    android:layout_below="@+id/flags_title"
+                                                    android:layout_marginTop="8dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:checked="false"
+                                                    android:background="@drawable/checkbox"
+                                                    android:layout_alignParentRight="true" />
+
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.7"
+                                        android:layout_marginTop="32dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_below="@id/contact_wrap">
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:background="@color/card_separator"/>
+
+                                        <android.support.design.widget.TabLayout
+                                            android:id="@+id/tabs"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="?attr/actionBarSize"
+                                            app:tabIndicatorColor="@color/card_grid_tex"
+                                            app:tabIndicatorHeight="2dp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            app:tabMode="fixed"
+                                            app:tabGravity="center"
+                                            app:tabPaddingStart="16dp"/>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:background="@color/card_separator"/>
+
+                                        <com.softmed.htmr_facility.customviews.WrapContentHeightViewPager
+                                            android:id="@+id/encounters_viewpager"
+                                            android:layout_width="match_parent"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:layout_height="wrap_content"/>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="32dp"
+                                    android:id="@+id/matokep_ll"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentRight="true"
+                                            android:textSize="24sp"
+                                            android:layout_marginLeft="32dp"
+                                            android:layout_marginRight="32dp"
+                                            android:textColor="@color/card_title_text"
+                                            android:fontFamily="@font/roboto_light"
+                                            android:text="Matokeo"/>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:background="@color/card_separator"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.7"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="32dp"
+                                            android:id="@+id/results_wrap"
+                                            android:orientation="horizontal">
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_marginLeft="32dp"
+                                                android:layout_height="wrap_content">
+
+                                                <fr.ganfra.materialspinner.MaterialSpinner
+                                                    android:id="@+id/spin_matokeo"
+                                                    android:layout_width="200dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerVertical="true"
+                                                    android:divider="@null"
+                                                    android:textSize="14sp"
+                                                    app_ms:ms_hintTextSize="14sp"
+                                                    app_ms:ms_alwaysShowFloatingLabel="true"
+                                                    app_ms:ms_multiline="false"
+                                                    app_ms:ms_hint="Matokeo"
+                                                    app_ms:ms_enableFloatingLabel="true"
+                                                    app_ms:ms_enableErrorLabel="false"
+                                                    app_ms:ms_floatingLabelText="Matokeo"
+                                                    app_ms:ms_baseColor="@color/card_grid_tex"
+                                                    app_ms:ms_highlightColor="@color/card_grid_text"
+                                                    app_ms:ms_errorColor="@color/red_500"
+                                                    app_ms:ms_hintColor="#b3b3b3"
+                                                    app_ms:ms_arrowColor="@color/black"
+                                                    app_ms:ms_arrowSize="12dp"
+                                                    app_ms:ms_alignLabels="false"
+                                                    app_ms:ms_floatingLabelColor="@color/white"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_toRightOf="@id/spin_matokeo"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/avenir_light"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:textSize="16dp"
+                                                    android:text="Matokeo"/>
+
+
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="0.6"
+                                                android:layout_marginRight="32dp"
+                                                android:layout_height="match_parent">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Tarehe"
+                                                    android:textSize="18sp"
+                                                    android:layout_marginLeft="32dp"
+                                                    android:layout_centerVertical="true"
+                                                    android:drawableRight="@mipmap/ic_date"
+                                                    android:drawablePadding="32dp"
+                                                    android:id="@+id/date"
+                                                    android:fontFamily="@font/roboto_bold"
+                                                    android:textColor="@color/card_title_text"
+                                                    />
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="32dp"
+                                            android:layout_below="@id/results_wrap"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Maelezo Mengine"
+                                                android:textSize="14sp"
+                                                android:layout_marginLeft="32dp"
+                                                android:id="@+id/other_information_title"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:textColor="@color/card_title_text"
+                                                />
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:minLines="3"
+                                                android:textSize="16sp"
+                                                android:layout_marginLeft="32dp"
+                                                android:layout_marginRight="32dp"
+                                                android:id="@+id/other_information"
+                                                android:gravity="start"
+                                                android:padding="4dp"
+                                                android:background="@drawable/border_one"
+                                                android:layout_below="@id/other_information_title"
+                                                android:layout_marginTop="8dp"/>
+
+
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <Button
+                                    android:layout_width="200dp"
+                                    android:layout_height="55dp"
+                                    android:id="@+id/hifadhi_taarifa"
+                                    android:background="@drawable/border_three"
+                                    android:text="Hifadhi Taarifa"
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="false"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:layout_gravity="right"
+                                    android:layout_margin="32dp"/>
+
+                            </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

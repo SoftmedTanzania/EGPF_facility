@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app_ms="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.softmed.htmr_facility.activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HTMR"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="14sp"
+                    android:id="@+id/app_name"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_separator_third"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Taarifa Za Awali"
+                            android:fontFamily="@font/roboto_condensed_italic"
+                            android:textColor="@color/card_grid_text"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:background="@color/card_separator"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Mgonjwa"
+                            android:textColor="@color/card_title_text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Jina"
+                                android:id="@+id/fname_et"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:inputType="textCapWords"
+                                android:imeOptions="actionNext"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Jina la Pili"
+                                android:id="@+id/mname_et"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                android:inputType="textCapWords"
+                                android:imeOptions="actionNext"
+                                app:et_dividerHeight="1dp"
+                                app:et_supportTextSize="20sp"
+                                app:et_supportTextColor="@color/black"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Ukoo"
+                                android:id="@+id/surname_et"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:inputType="textCapWords"
+                                android:imeOptions="actionDone"
+                                app:et_dividerHeight="1dp"
+                                app:et_supportTextSize="20sp"
+                                app:et_supportTextColor="@color/black"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/spin_gender"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:divider="@null"
+                                android:textSize="14sp"
+                                app_ms:ms_hintTextSize="14sp"
+                                app_ms:ms_alwaysShowFloatingLabel="true"
+                                app_ms:ms_multiline="false"
+                                app_ms:ms_hint="Jinsi"
+                                app_ms:ms_enableFloatingLabel="true"
+                                app_ms:ms_enableErrorLabel="false"
+                                app_ms:ms_floatingLabelText="Jinsi"
+                                app_ms:ms_baseColor="@color/card_grid_tex"
+                                app_ms:ms_highlightColor="@color/card_grid_text"
+                                app_ms:ms_errorColor="@color/red_500"
+                                app_ms:ms_hintColor="#b3b3b3"
+                                app_ms:ms_arrowColor="@color/black"
+                                app_ms:ms_arrowSize="12dp"
+                                app_ms:ms_alignLabels="false"
+                                app_ms:ms_floatingLabelColor="@color/white"/>
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="CTC Number"
+                                android:id="@+id/patient_ctc_number"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="4dp"
+                                android:inputType="numberDecimal"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp">
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Uzito"
+                                android:id="@+id/weight"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="8dp"
+                                android:inputType="numberDecimal"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="CBHS"
+                                android:id="@+id/cbhs_number"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="8dp"
+                                android:inputType="numberDecimal"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Tarehe ya Kuzaliwa"
+                                android:id="@+id/date_of_birth"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_grid_tex"
+                                android:textSize="16sp"
+                                android:layout_gravity="bottom"
+                                android:fontFamily="@font/roboto_bold"
+                                android:drawableRight="@mipmap/ic_date"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"/>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/blood_cough_title"
+                                    android:layout_below="@id/flags_title"
+                                    android:layout_centerVertical="true"
+                                    android:text="Mjamzito"
+                                    android:enabled="false"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:textColor="@color/card_grid_text"/>
+
+                                <CheckBox
+                                    android:id="@+id/is_pregnant"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="16dp"
+                                    android:background="@drawable/checkbox"
+                                    android:checked="false"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="32dp"/>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Msaidizi"
+                            android:textColor="@color/card_title_text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp">
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Jina la Msaidizi"
+                                android:id="@+id/care_taker_name"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="8dp"
+                                android:inputType="textCapWords"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Namba ya Simu"
+                                android:id="@+id/care_taker_phone"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="8dp"
+                                android:inputType="phone"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <com.rey.material.widget.EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="Mahusiano"
+                                android:id="@+id/care_taker_relationship"
+                                android:textColor="@color/card_title_text"
+                                android:textColorHint="@color/card_separator"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="8dp"
+                                android:inputType="textCapWords"
+                                app:et_dividerHeight="1dp"
+                                app:et_dividerColor="@color/card_grid_text"
+                                app:et_labelEnable="true"
+                                app:et_labelTextColor="@color/card_grid_text" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Taarifa Nyingine"
+                        android:fontFamily="@font/roboto_condensed_italic"
+                        android:textColor="@color/card_grid_text"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@color/card_separator"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <com.rey.material.widget.EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Simu"
+                            android:id="@+id/phone_number"
+                            android:textColor="@color/card_title_text"
+                            android:textColorHint="@color/card_separator"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:drawableRight="@mipmap/ic_phone"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            android:inputType="phone"
+                            app:et_dividerHeight="1dp"
+                            app:et_dividerColor="@color/card_grid_text"
+                            app:et_labelEnable="true"
+                            app:et_labelTextColor="@color/card_grid_text"/>
+
+                        <com.rey.material.widget.EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Kata"
+                            android:id="@+id/ward"
+                            android:textColor="@color/card_title_text"
+                            android:textColorHint="@color/card_separator"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            app:et_dividerHeight="1dp"
+                            app:et_dividerColor="@color/card_grid_text"
+                            app:et_labelEnable="true"
+                            app:et_labelTextColor="@color/card_grid_text" />
+
+
+                        <com.rey.material.widget.EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Kijiji"
+                            android:id="@+id/village"
+                            android:textColor="@color/card_title_text"
+                            android:textColorHint="@color/card_separator"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            app:et_dividerHeight="1dp"
+                            app:et_dividerColor="@color/card_grid_text"
+                            app:et_labelEnable="true"
+                            app:et_labelTextColor="@color/card_grid_text" />
+
+
+                        <com.rey.material.widget.EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Kitongoji"
+                            android:id="@+id/hamlet"
+                            android:textColor="@color/card_title_text"
+                            android:textColorHint="@color/card_separator"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            app:et_dividerHeight="1dp"
+                            app:et_dividerColor="@color/card_grid_text"
+                            app:et_labelEnable="true"
+                            app:et_labelTextColor="@color/card_grid_text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <com.rey.material.widget.EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="VEO"
+                            android:id="@+id/mwenyekiti"
+                            android:textColor="@color/card_title_text"
+                            android:textColorHint="@color/card_separator"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"
+                            android:inputType="textCapWords"
+                            app:et_dividerHeight="1dp"
+                            app:et_dividerColor="@color/card_grid_text"
+                            app:et_labelEnable="true"
+                            app:et_labelTextColor="@color/card_grid_text" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="8dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Hifadhi"
+                android:id="@+id/save_button"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/roboto_bold"
+                android:background="@drawable/border_two"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

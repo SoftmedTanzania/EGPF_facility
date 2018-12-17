@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app_ms="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.softmed.htmr_facility.activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rufaa Zilizotolewa"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="14sp"
+                    android:id="@+id/app_name"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/card_separator"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spin_status"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:divider="@null"
+                    android:layout_marginLeft="16dp"
+                    app_ms:ms_hintTextSize="14sp"
+                    app_ms:ms_multiline="false"
+                    app_ms:ms_hint="Status"
+                    app_ms:ms_enableFloatingLabel="true"
+                    app_ms:ms_enableErrorLabel="false"
+                    app_ms:ms_floatingLabelText="Status"
+                    app_ms:ms_baseColor="@color/colorAccent"
+                    app_ms:ms_highlightColor="@color/colorPrimary"
+                    app_ms:ms_errorColor="@color/red_500"
+                    app_ms:ms_hintColor="#b3b3b3"
+                    app_ms:ms_arrowColor="@color/colorAccent"
+                    app_ms:ms_arrowSize="12dp"
+                    app_ms:ms_floatingLabelColor="@color/colorAccent"
+                    />
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/client_name_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_portrait"
+                    android:layout_marginLeft="16dp"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:hint="Jina la kwanza"
+                    android:fontFamily="@font/avenir_light"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/client_last_name_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_portrait"
+                    android:layout_marginLeft="16dp"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:hint="Jina Lingine"
+                    android:fontFamily="@font/avenir_light"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/client_ctc_number_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_credit_card"
+                    android:layout_marginLeft="16dp"
+                    android:hint="Namba ya CTC"
+                    android:fontFamily="@font/avenir_light"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"
+                    android:id="@+id/from_date"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/black"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:drawableRight="@mipmap/ic_date_range"
+                    android:layout_marginLeft="16dp"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:hint="Kutoka Tarehe"
+                    android:fontFamily="@font/avenir_light"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:hint="Mpaka Tarehe"
+                    android:id="@+id/to_date"
+                    android:textSize="14sp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/avenir_light"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:drawableRight="@mipmap/ic_date_range"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="4dp">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="16dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Tafuta"
+                        android:textColor="@color/card_grid_text"
+                        android:fontFamily="@font/roboto_bold"
+                        android:background="@drawable/border_filter_button"
+                        android:id="@+id/filter_button"/>
+
+                    <com.rey.material.widget.ProgressView
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:paddingLeft="35dp"
+                        android:paddingRight="35dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/progress_bar"
+                        app:pv_autostart="true"
+                        app:pv_circular="true"
+                        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+                        app:pv_progressMode="indeterminate"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_condensed"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/client_name"
+                        android:textColor="@color/black"
+                        android:text="Majina"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:id="@+id/referral_reasons"
+                        android:fontFamily="@font/roboto_condensed"
+                        android:text="Sababu za Rufaa"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_condensed"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/ref_date"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black"
+                        android:text="Tarehe ya Rufaa"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/roboto_condensed"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/ctc_number"
+                        android:text="Huduma"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/attended_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="center"
+                        android:text="Hali ya Rufaa"
+                        android:fontFamily="@font/roboto_condensed"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/clients_recycler"
+                android:background="@color/card_separator_third"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

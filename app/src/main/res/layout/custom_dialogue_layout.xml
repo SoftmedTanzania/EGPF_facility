@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app_ms="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"
+                    android:id="@+id/patient_name_title"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:textColor="@color/white"
+                    android:text="Rufaa kwa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"
+                    android:id="@+id/patient_name"
+                    android:fontFamily="@font/avenir_light"
+                    android:textColor="@color/white"
+                    android:text="Jonh Doe" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/cyan_400"/>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="70dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spin_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:divider="@null"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="14sp"
+                        app_ms:ms_hintTextSize="14sp"
+                        app_ms:ms_alwaysShowFloatingLabel="true"
+                        app_ms:ms_multiline="false"
+                        app_ms:ms_hint="Chagua Huduma"
+                        app_ms:ms_enableFloatingLabel="true"
+                        app_ms:ms_enableErrorLabel="false"
+                        app_ms:ms_floatingLabelText="Chagua Huduma"
+                        app_ms:ms_baseColor="@color/white"
+                        app_ms:ms_highlightColor="@color/colorPrimary"
+                        app_ms:ms_errorColor="@color/red_500"
+                        app_ms:ms_hintColor="#b3b3b3"
+                        app_ms:ms_arrowColor="@color/white"
+                        app_ms:ms_arrowSize="12dp"
+                        app_ms:ms_alignLabels="false"
+                        app_ms:ms_floatingLabelColor="@color/white"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spin_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:divider="@null"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp"
+                        app_ms:ms_hintTextSize="14sp"
+                        app_ms:ms_alwaysShowFloatingLabel="true"
+                        app_ms:ms_multiline="false"
+                        app_ms:ms_hint="Kwenda"
+                        app_ms:ms_enableFloatingLabel="true"
+                        app_ms:ms_enableErrorLabel="false"
+                        app_ms:ms_floatingLabelText="Kwenda"
+                        app_ms:ms_baseColor="@color/white"
+                        app_ms:ms_highlightColor="@color/colorPrimary"
+                        app_ms:ms_errorColor="@color/red_500"
+                        app_ms:ms_hintColor="#b3b3b3"
+                        app_ms:ms_arrowColor="@color/white"
+                        app_ms:ms_arrowSize="12dp"
+                        app_ms:ms_alignLabels="false"
+                        app_ms:ms_floatingLabelColor="@color/white"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="match_parent">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spin_to_facility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:divider="@null"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="14sp"
+                        app_ms:ms_hintTextSize="14sp"
+                        app_ms:ms_alwaysShowFloatingLabel="true"
+                        app_ms:ms_multiline="false"
+                        app_ms:ms_hint="Kituo"
+                        app_ms:ms_enableFloatingLabel="true"
+                        app_ms:ms_enableErrorLabel="false"
+                        app_ms:ms_floatingLabelText="Kituo"
+                        app_ms:ms_baseColor="@color/white"
+                        app_ms:ms_highlightColor="@color/colorPrimary"
+                        app_ms:ms_errorColor="@color/red_500"
+                        app_ms:ms_hintColor="#b3b3b3"
+                        app_ms:ms_arrowColor="@color/white"
+                        app_ms:ms_arrowSize="12dp"
+                        app_ms:ms_alignLabels="false"
+                        app_ms:ms_floatingLabelColor="@color/white"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/cyan_400"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tb_indicators_wrapper">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/indicators_title"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Chagua Viashiria"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/indicators_recycler"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/hiv_separator"
+                android:background="@color/cyan_400"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_marginTop="16dp"
+                        android:text="Sababu za Rufaa"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_three"
+                        android:id="@+id/referal_reasons_text"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="16sp"
+                        android:gravity="start"
+                        android:textColor="@color/white"
+                        android:paddingStart="4dp"
+                        android:minLines="4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_marginTop="16dp"
+                        android:text="Taarifa zingine za Kliniki"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_three"
+                        android:id="@+id/other_clinical_information_text"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="8dp"
+                        android:textSize="16sp"
+                        android:gravity="start"
+                        android:textColor="@color/white"
+                        android:paddingStart="4dp"
+                        android:minLines="4"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/cyan_900"
+                android:paddingBottom="4dp">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/tuma_button"
+                    android:background="@drawable/border_four"
+                    android:text="Tuma"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/rosario_regular"
+                    android:layout_marginTop="32dp"/>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/tuma_button"
+                    android:id="@+id/cancel_button"
+                    android:background="@drawable/border_four"
+                    android:text="Cancel"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/rosario_regular"
+                    android:layout_marginTop="32dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

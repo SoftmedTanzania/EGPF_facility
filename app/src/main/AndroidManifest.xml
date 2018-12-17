@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.softmed.htmr_facility" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name="com.softmed.htmr_facility.activities.MainActivity"
+            >
+        </activity>
+
+        <activity android:name="com.softmed.htmr_facility.activities.LoaderActivity">
+        </activity>
+
+        <activity android:name="com.softmed.htmr_facility.activities.ReferalListActivityOld"
+            android:parentActivityName="com.softmed.htmr_facility.activities.MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.ReferedClientsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.NewReferalsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.ClientsDetailsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.ReferalListActivityOld"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.LoginActivity">
+        </activity>
+
+        <activity android:name="com.softmed.htmr_facility.activities.HomeActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.softmed.htmr_facility.activities.TbReferalListActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.HomeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.ReferralListActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.HomeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.TbReferralDetailsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.TbReferalListActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.AppointmentActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.HomeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.ClientRegisterActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.HomeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <service
+            android:name="com.softmed.htmr_facility.services.FirebaseInstanseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="com.softmed.htmr_facility.services.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.softmed.htmr_facility.utils.AlarmReceiver"
+            android:process=":remote">
+        </receiver>
+
+        <service android:name="com.softmed.htmr_facility.services.PostOfficeService"
+            android:exported="false"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.TbClientListActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.TbClientDetailsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.TbClientListActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.FeedbackDetailsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.ReferedClientsActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name="com.softmed.htmr_facility.activities.OpdReferralDetailsActivity"
+            android:parentActivityName="com.softmed.htmr_facility.activities.HomeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".activities.PatientDetailsActivity"
+            android:parentActivityName=".activities.NewReferalsActivity"/>
+
+    </application>
+
+</manifest>

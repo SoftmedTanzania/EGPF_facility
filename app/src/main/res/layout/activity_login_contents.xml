@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/background"
+                    android:scaleType="centerCrop"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:alpha="0.9"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/card_separator"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:paddingRight="32dp"
+            android:paddingLeft="32dp"
+            android:paddingTop="16dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="32dp"
+            android:id="@+id/credential_card"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/lock_ico"
+                android:src="@mipmap/ic_lock_open"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/lock_ico"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Ingia"
+                android:id="@+id/login_title"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/login_title"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Ingiza jina na neno la siri"
+                android:id="@+id/login_msg"
+                android:textColor="@color/card_grid_text"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_title">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="32dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:hint="Jina"
+                        android:id="@+id/username_et"
+                        android:textColor="@color/card_title_text"
+                        android:textColorHint="@color/card_grid_text"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/roboto_regular" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Neno la siri"
+                        android:id="@+id/password_et"
+                        android:textColor="@color/card_title_text"
+                        android:textColorHint="@color/card_grid_tex"
+                        android:textSize="24sp"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_gravity="center_vertical"/>
+
+                    <com.rey.material.widget.ProgressView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/login_progress"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        app:pv_circular="true"
+                        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+                        app:pv_progressMode="indeterminate"
+                        app:cpd_strokeColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Ingia"
+                    android:id="@+id/login_button"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:background="@color/card_title_text"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/login_screen_logo"
+            android:src="@mipmap/ic_logo_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/login_screen_logo"
+            android:textSize="32sp"
+            android:text="htmr"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/referral_text"
+            android:layout_below="@id/login_screen_logo"
+            android:layout_toRightOf="@id/login_screen_logo"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_light"
+            android:text="Referral"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/application_text"
+            android:layout_below="@id/referral_text"
+            android:layout_toRightOf="@id/login_screen_logo"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_light"
+            android:text="Application"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_messages"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/avenir_light"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="Logging in"
+            android:layout_below="@id/credential_card"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:id="@+id/tanzania_logo"
+                android:alpha="0.15"
+                android:src="@drawable/tanzania"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:id="@+id/egpf"
+                android:alpha="0.15"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/egpf"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.softmed.htmr_facility.activities.MainActivity"
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HTMR"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="14sp"
+                        android:id="@+id/app_name"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@color/colorPrimary"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="72dp"
+                            android:layout_marginRight="72dp"
+                            android:layout_marginTop="46dp"
+                            android:paddingBottom="16dp"
+                            android:layout_marginBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/card_separator_third">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_marginTop="16dp"
+                                        android:textColor="@color/black"
+                                        android:text="Taarifa za Rufaa"
+                                        android:textSize="42sp"
+                                        android:id="@+id/heading"
+                                        android:fontFamily="@font/roboto_bold"/>
+
+                                    <View
+                                        android:layout_width="200dp"
+                                        android:layout_height="5dp"
+                                        android:id="@+id/strip_one"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_below="@id/heading"
+                                        android:background="@color/card_separator"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/strip_one"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_marginTop="16dp"
+                                        android:textSize="24sp"
+                                        android:id="@+id/client_name"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:text="Juma Khamisi Doe"
+                                        android:textColor="@color/colorPrimary"/>
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:background="@color/card_separator_third"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/card_separator_third"
+                                    android:paddingLeft="32dp"
+                                    android:paddingRight="32dp"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:paddingBottom="16dp">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Miaka"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:id="@+id/client_age_title"
+                                            android:textColor="@color/card_grid_text"
+                                            android:fontFamily="@font/roboto_bold"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/card_grid_text"
+                                            android:layout_marginLeft="16dp"
+                                            android:textSize="16sp"
+                                            android:id="@+id/client_age_value"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:layout_toRightOf="@id/client_age_title"
+                                            android:text="27"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Jinsia"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:layout_below="@id/client_age_title"
+                                            android:id="@+id/client_gender_title"
+                                            android:textColor="@color/card_grid_text"
+                                            android:fontFamily="@font/roboto_bold"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/card_grid_text"
+                                            android:layout_marginLeft="16dp"
+                                            android:textSize="16sp"
+                                            android:id="@+id/patient_gender_value"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:layout_below="@id/client_age_title"
+                                            android:layout_toRightOf="@+id/client_gender_title"
+                                            android:text="KE"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/patient_gender_value"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:id="@+id/mwenyekiti_name_title"
+                                            android:textColor="@color/card_grid_text"
+                                            android:text="m/kiti kitongoji"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/mwenyekiti_name_value"
+                                            android:layout_below="@id/patient_gender_value"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:layout_toRightOf="@id/mwenyekiti_name_title"
+                                            android:layout_marginLeft="16dp"
+                                            android:textColor="@color/card_grid_text"
+                                            android:text="Mwenelukanzima Mpechu"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:paddingBottom="16dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kata"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:id="@+id/client_kata_title"
+                                            android:textColor="@color/card_grid_text"
+                                            android:fontFamily="@font/roboto_bold"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/card_grid_text"
+                                            android:textSize="16sp"
+                                            android:id="@+id/client_kata_value"
+                                            android:layout_marginLeft="16dp"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:layout_toRightOf="@+id/client_kata_title"
+                                            android:text="Msolwa"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kijiji"
+                                            android:layout_below="@id/client_kata_title"
+                                            android:textSize="14sp"
+                                            android:layout_marginTop="8dp"
+                                            android:id="@+id/client_kijiji_title"
+                                            android:textColor="@color/card_grid_text"
+                                            android:fontFamily="@font/roboto_bold"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/card_grid_text"
+                                            android:layout_marginLeft="16dp"
+                                            android:textSize="14sp"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:id="@+id/client_kijiji_value"
+                                            android:layout_below="@id/client_kata_title"
+                                            android:layout_toRightOf="@id/client_kijiji_title"
+                                            android:text="Mbelwa"/>
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:visibility="gone"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textColor="@color/card_title_text"
+                                            android:textSize="14sp"
+                                            android:id="@+id/referer_name_title"
+                                            android:text="Rufaa imetolewa na"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/referer_name_title"
+                                            android:id="@+id/referer_name_value"
+                                            android:layout_marginTop="4dp"
+                                            android:visibility="gone"
+                                            android:textColor="@color/card_title_text"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textSize="14sp"
+                                            android:text="Kinjekitile Ngwale" />
+
+                                        <TextView
+                                            android:visibility="gone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/cheo_title"
+                                            android:layout_below="@id/referer_name_value"
+                                            android:textSize="14sp"
+                                            android:textColor="@color/card_title_text"
+                                            android:text="Cheo"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:layout_marginTop="16dp"/>
+
+                                        <TextView
+                                            android:visibility="gone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/cheo_value"
+                                            android:layout_marginTop="4dp"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:layout_below="@id/cheo_title"
+                                            android:textSize="14sp"
+                                            android:text="CHW"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Map Cue"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:id="@+id/client_kitongoji_title"
+                                            android:textColor="@color/card_grid_text"
+                                            android:fontFamily="@font/roboto_bold"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/card_grid_text"
+                                            android:textSize="16sp"
+                                            android:id="@+id/client_kitongoji_value"
+                                            android:layout_marginTop="4dp"
+                                            android:fontFamily="@font/roboto_regular"
+                                            android:layout_below="@id/client_kitongoji_title"
+                                            android:text="Mkesemani"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:visibility="invisible"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/cyan_100"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:id="@+id/referer_title"
+                                    android:text="Taarifa za rufaa"
+                                    android:textColor="@color/card_title_text"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/roboto_bold"/>
+
+                                <View
+                                    android:layout_width="60dp"
+                                    android:layout_height="5dp"
+                                    android:id="@+id/strip_two"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/card_separator"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="16dp"
+                                    android:padding="16dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.3"
+                                        android:layout_marginRight="16dp"
+                                        android:background="@color/white"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sababu ya Rufaa"
+                                            android:id="@+id/sababu_ya_rufaa_title"
+                                            android:textColor="@color/card_title_text"
+                                            android:textSize="14sp"
+                                            android:fontFamily="@font/roboto_condensed"/>
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/sababu_ya_rufaa_title">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/card_grid_text"
+                                                android:fontFamily="@font/avenir_light"
+                                                android:textSize="16sp"
+                                                android:id="@+id/sababu_ya_rufaa_value"
+                                                android:text="@string/dummy_text"/>
+
+                                        </RelativeLayout>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:visibility="gone"
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/card_separator"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_marginRight="16dp"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.3"
+                                        android:visibility="gone"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/drug_allergies_title"
+                                            android:textSize="14sp"
+                                            android:text="Allergies za Dawa"
+                                            android:fontFamily="@font/roboto_condensed"
+                                            android:textColor="@color/card_title_text"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/drug_allergies_title"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="14sp"
+                                            android:text="N/A"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textColor="@color/card_title_text"/>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/card_separator"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_marginRight="16dp"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.3"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Viashiria"
+                                            android:id="@+id/viashiria_title"
+                                            android:textColor="@color/card_title_text"
+                                            android:textSize="14sp"
+                                            android:fontFamily="@font/roboto_condensed"/>
+
+                                        <android.support.v7.widget.RecyclerView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/viashiria_title"
+                                            android:id="@+id/indicators_linear_recycler"/>
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/card_separator"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_marginRight="16dp"/>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.3"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/clinical_information_title"
+                                            android:textSize="14sp"
+                                            android:text="Taarifa Nyingine za Kliniki"
+                                            android:fontFamily="@font/roboto_condensed"
+                                            android:textColor="@color/card_title_text"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/clinical_information_title"
+                                            android:layout_marginTop="8dp"
+                                            android:id="@+id/other_clinical_inforamtion_value"
+                                            android:textSize="14sp"
+                                            android:text="N/A"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textColor="@color/card_title_text"/>
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/card_separator"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/feedback_title"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="16dp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/card_title_text"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:text="Mrejesho wa Rufaa"/>
+
+
+                                <View
+                                    android:layout_width="90dp"
+                                    android:layout_height="5dp"
+                                    android:id="@+id/strip_three"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/card_separator"/>
+
+
+                                <RelativeLayout
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:paddingLeft="16dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="4dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/hiv_status_title"
+                                        android:layout_marginTop="16dp"
+                                        android:text="Test Results"
+                                        android:textSize="14sp"
+                                        android:fontFamily="@font/avenir_light"
+                                        android:textColor="@color/card_title_text"/>
+
+                                    <CheckBox
+                                        android:id="@+id/hiv_status"
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="32dp"
+                                        android:layout_toRightOf="@+id/hiv_status_title"
+                                        android:checked="false"
+                                        android:background="@drawable/checkbox" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@id/hiv_status"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="16dp"
+                                        android:textSize="12sp"
+                                        android:id="@+id/test_results_hint"
+                                        android:textColor="@color/card_grid_text"
+                                        android:text="( Check if Positive )"
+                                        android:fontFamily="@font/roboto_condensed_italic"/>
+
+                                    <EditText
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_below="@id/hiv_status_title"
+                                        android:id="@+id/ctc_number_et"
+                                        android:hint="CTC Number"
+                                        android:textColorHint="@color/card_light_text"
+                                        android:gravity="start"
+                                        android:padding="8dp"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/card_grid_text"
+                                        android:background="@drawable/border_one" />
+
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_marginBottom="8dp">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:padding="16dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/service_offered_title"
+                                            android:text="Huduma iliyotolewa"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/card_title_text"/>
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:id="@+id/service_offered_et"
+                                            android:minLines="4"
+                                            android:gravity="start"
+                                            android:padding="8dp"
+                                            android:textSize="14sp"
+                                            android:textColor="@color/card_grid_text"
+                                            android:background="@drawable/border_one" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="16dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/service_advice_title"
+                                            android:text="Maelezo mengine/Ushauri"
+                                            android:fontFamily="@font/avenir_light"
+                                            android:textSize="18sp"
+                                            android:textColor="@color/card_title_text"/>
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:id="@+id/other_information_et"
+                                            android:minLines="4"
+                                            android:padding="8dp"
+                                            android:textSize="14sp"
+                                            android:gravity="start"
+                                            android:textColor="@color/card_grid_text"
+                                            android:background="@drawable/border_one" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp">
+
+                                    <Button
+                                        android:layout_width="200dp"
+                                        android:layout_height="60dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="16dp"
+                                        android:text="Forward Referral"
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/referal_button"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:textColor="@color/card_title_text"
+                                        android:background="@drawable/border_one"/>
+
+                                    <Button
+                                        android:layout_width="200dp"
+                                        android:layout_height="60dp"
+                                        android:id="@+id/cancel"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/border_two"
+                                        android:layout_toLeftOf="@id/referal_button"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:layout_marginRight="16dp"
+                                        android:textColor="@color/card_grid_text"
+                                        android:text="Cancel"/>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

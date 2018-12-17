@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app_ms="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.softmed.htmr_facility.activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HTMR"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="14sp"
+                    android:id="@+id/app_name"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/card_separator"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/client_name_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_portrait"
+                    android:layout_marginLeft="16dp"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:hint="Jina la kwanza"
+                    android:fontFamily="@font/avenir_light"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/client_last_name_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_portrait"
+                    android:layout_marginLeft="16dp"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:hint="Jina Lingine"
+                    android:fontFamily="@font/avenir_light"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/client_ctc_number_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_credit_card"
+                    android:layout_marginLeft="16dp"
+                    android:hint="Namba ya CTC"
+                    android:fontFamily="@font/avenir_light"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/client_village_et"
+                    android:textColor="@color/card_title_text"
+                    android:drawableRight="@mipmap/ic_credit_card"
+                    android:layout_marginLeft="16dp"
+                    android:hint="Kijiji"
+                    android:fontFamily="@font/avenir_light"
+                    android:textColorHint="@color/card_grid_tex"
+                    android:textSize="14sp"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="4dp">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="16dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Tafuta"
+                        android:textColor="@color/card_grid_text"
+                        android:fontFamily="@font/roboto_bold"
+                        android:background="@drawable/border_filter_button"
+                        android:id="@+id/filter_button"/>
+
+                    <com.rey.material.widget.ProgressView
+                        android:visibility="gone"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:paddingLeft="35dp"
+                        android:paddingRight="35dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp"
+                        android:id="@+id/progress_bar"
+                        app:pv_autostart="true"
+                        app:pv_circular="true"
+                        app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+                        app:pv_progressMode="indeterminate"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/client_f_name"
+                        android:textColor="@color/black"
+                        android:text="Namba Ya CTC"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/client_l_name"
+                        android:textColor="@color/black"
+                        android:text="Namba ya Simu"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/client_gender"
+                        android:textColor="@color/black"
+                        android:text="Jinsia"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/treatment"
+                        android:textColor="@color/black"
+                        android:text="Matibabu"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/client_phone_number"
+                        android:textColor="@color/black"
+                        android:text="Kata"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/avenir_light"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/client_village"
+                        android:textColor="@color/black"
+                        android:text="Kijiji"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/patients_recycler"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/card_separator_third"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

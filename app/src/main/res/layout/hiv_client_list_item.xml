@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:id="@+id/wrapper"
+        android:layout_gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_ctc_number"
+                android:textColor="@color/black"
+                android:text="Namba ya ctc"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_phone_number"
+                android:textColor="@color/black"
+                android:text="0733110068"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_ward"
+                android:textColor="@color/black"
+                android:text="Kata"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/avenir_light"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/client_village"
+                android:textColor="@color/black"
+                android:text="Kijiji"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/wrapper"
+        android:background="@color/card_separator"/>
+
+</RelativeLayout>
